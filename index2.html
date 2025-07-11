@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- 引入Google Fonts的手写字体 -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Klee+One&display=swap" rel="stylesheet">
 <title>Owen's blog</title>
@@ -38,8 +39,14 @@
       margin-right: 20px;
     }
 
+    h1, h2 {
+      /* 使用Google Fonts的标题字体 */
+      font-family: 'Dancing Script', cursive;
+      font-weight: 700; /* 使用粗体 */
+    }
+
     h1 {
-      font-size: 2.5em;
+      font-size: 3em; /* 增大标题字体 */
       margin: 0;
     }
 
@@ -48,10 +55,7 @@
       padding-left: 10px;
       margin-top: 30px;
       margin-bottom: 20px;
-    }
-
-    h1, h2 {
-      font-family: "Klee One", sans-serif;
+      font-size: 2em; /* 调整副标题大小 */
     }
 
     p {
@@ -66,28 +70,28 @@
     }
 
     .text-content {
-      /* 移除右侧边距限制，让文字可以覆盖到右侧 */
       margin-right: 0;
     }
 
     .icons-container {
-      /* 改为绝对定位 */
       position: absolute;
       right: 0;
-      bottom: -60px;
-      z-index: 0; /* 让图片处于底层 */
+      bottom: 0;
+      z-index: 0;
       display: flex;
       flex-direction: column;
       gap: 10px;
-      opacity: 0.7; /* 可选：降低图片透明度 */
+      opacity: 0.7;
     }
 
     .icons {
-      width: 120px;
+      width: 50px;
+      height: 50px;
     }
 
     .icons-large {
-      width: 140px;
+      width: 80px;
+      height: 80px;
     }
   </style>
 </head>
